@@ -1,6 +1,12 @@
 window.addEventListener('load', () => {
     let logobutton = document.getElementById("logobutton")
-    logobutton.addEventListener("click" , () => {
-        window.location = "./index.html"
-    })
+    if(location.href.includes("articles")) {
+        logobutton.addEventListener("click" , () => {
+            window.location = "../index.html"
+        })
+    } else {
+        logobutton.addEventListener("click" , () => {
+            window.location = "./index.html"
+        })
+    }
 })

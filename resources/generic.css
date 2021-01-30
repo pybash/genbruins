@@ -61,7 +61,23 @@ body {
 .textalignCenter {
     text-align: center;
 }
-
+.hrefDecorator {
+    display:inline-block;
+    color:rgb(33, 122, 223) !important;
+    text-decoration: none !important;
+}
+.hrefDecorator::after {
+    display:block;
+    width:0;
+    margin:auto;
+    height:2px;
+    background-color:rgb(33, 122, 223) !important;
+    content:'';
+    transition: .3s ease-in-out;
+}
+.hrefDecorator:hover::after {
+    width:100%;
+}
 
 /* INDEX CSS */
 
@@ -180,12 +196,13 @@ body {
 .articleBody {
     position: relative;
     left:50px;
-    top:-130px;
+    top:-230px;
     background-color: white;
     border: 1px solid gray;
     width:60%;
     border-radius: 20px;
     padding: 0 40px;
+    padding-bottom:40px;
 }
 .articleBody h1 {
     text-align: center;
