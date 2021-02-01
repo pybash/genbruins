@@ -9,12 +9,6 @@ window.addEventListener('load', () => {
     })
 
     searchbutton.addEventListener("click" , () => {
-        let xhr = new XMLHttpRequest();
-
-        xhr.addEventListener('load' ,(resp) => {
-            searchbar.value = xhr.responseText;
-        })
-        xhr.open("GET", "./test.php?query=" + searchbar.value);
-        xhr.send();
+        location.href = "./search.php?query=" + searchbar.value
     })
 })
