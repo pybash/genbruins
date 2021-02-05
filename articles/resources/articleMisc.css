@@ -28,6 +28,7 @@ body {
     font-size: 50px;
     letter-spacing: -6px;
     background:linear-gradient(113deg, rgba(181,163,255,1) 0%, rgba(132,188,255,1) 100%);
+    background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
