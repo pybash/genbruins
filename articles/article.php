@@ -46,8 +46,8 @@
     </div>
     <div class="posthero gradient"></div>
     <div class="articleBody">
-        <?php echo '<h1>' . $articleDict["title"] . ' </h1>;'?>
-        <?php echo $articleDict["innerContent"] ?>
+        <?php echo '<h1>' . $articleDict["title"] . ' </h1>';?>
+        <?php echo $articleDict["innerContent"]; ?>
     </div>
     </body>
 </html>
