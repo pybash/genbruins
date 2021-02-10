@@ -233,3 +233,32 @@ body {
     left:20px;
     bottom:12px;
 }
+.searchResults .searchresult {
+    position: relative;
+    top:0;
+    margin-top:14px;
+    display:block;
+    margin-left:15px;
+    border-radius: 20px;
+    width:95%;
+    height:120px;
+    border: 1px solid gray;
+    cursor:pointer;
+    transition: .1s top ease-in-out;
+}
+.searchResults .searchresult:hover {
+    position: relative;
+    top:-4px;
+}
+.searchResults .searchresult h1 {
+    position: relative;
+    left:30px;
+}
+.searchResults .searchresult p {
+    position: relative;
+    left:25px;
+    top:-15px;
+    width:97%;
+    height:80px;
+    overflow:hidden
+}

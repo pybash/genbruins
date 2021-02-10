@@ -17,9 +17,7 @@
     <link rel="shortcut icon" href="../favicon.ico"type="image/x-icon"/>
     <?php 
         $articleQuery = $_GET["id"];
-        $articlesJSONOpen = fopen("./articles.json", "r") or die("Unable to index file");
-        $articlesJSON = json_decode(fread($articlesJSONOpen, filesize("./articles.json")), true);
-        fclose($articlesJSONOpen);
+        $articlesJSON = json_decode(file_get_contents("./articles.json"), true);
         # GOD PHP IS SO BAD
         $foundArticle = false;
         $articleDict;
@@ -46,8 +44,8 @@
     </div>
     <div class="posthero gradient"></div>
     <div class="articleBody">
-        <?php echo '<h1>' . $articleDict["title"] . ' </h1>';?>
-        <?php echo $articleDict["innerContent"]; ?>
+        <?php echo '<h1 id="title">' . $articleDict["title"] . ' </h1>';?>
+        <?php echo $articleDict["innerContent"] ?>
     </div>
     </body>
 </html>
